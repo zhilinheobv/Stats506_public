@@ -15,7 +15,7 @@ Zhilin He: https://github.com/zhilinheobv/Stats506_public
 2. In week 2 we worked though some questions about R vectors.
 3. In week 3 we created and modified a git repository.
 
-## Weeks 4-6
+### Weeks 4-6
 
 Zhilin He: https://github.com/zhilinheobv/Stats506_public
 
