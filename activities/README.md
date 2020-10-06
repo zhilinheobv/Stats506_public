@@ -26,6 +26,6 @@ week4_part1.html: The resulting html file.
 
 In week 5, we made 2 plots using ggplot.
 
-<img src="../week5/w4_p2_q1_plot.png" height="50%" width="50%">
+<img src="../activities/week5/w4_p2_q1_plot.png" height="50%" width="50%">
 
-<img src="../week5/w4_p2_q1_plot.png" height="50%" width="50%">
+<img src="../activities/week5/w4_p2_q2_plot.png" height="50%" width="50%">
