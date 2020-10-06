@@ -55,7 +55,6 @@ library(ggplot2)
 library(dplyr)
 plot_data_1 = plot_data[plot_data$rurality %in% c('rural', 'urban'), ]
 p1 = plot_data_1 %>% 
-  mutate(est = 100*est, lwr = 100*lwr, upr = 100*upr) %>%
   ggplot(aes(x = division, y = est, color = rurality)) +
   geom_point(position = position_dodge(width = 0.5)) +
   geom_errorbar(
@@ -81,7 +80,6 @@ cap = paste("*Difference (urban less rural) in proportion of",
 #  data above. 
 plot_data_2 = plot_data[plot_data$rurality == 'diff', ]
 p2 = plot_data_2 %>% 
-  mutate(est = 100*est, lwr = 100*lwr, upr = 100*upr) %>%
   ggplot(aes(y = division, x = est)) + 
   geom_point() +
   geom_errorbarh(aes(xmin = lwr, xmax = upr)) +
