@@ -53,8 +53,8 @@ cap = paste("*Proportion of homes with internet access in each",
 #  data above. 
 library(ggplot2)
 library(dplyr)
-plot_data_1 = plot_data[plot_data$rurality %in% c('rural', 'urban'), ]
-p1 = plot_data_1 %>% 
+p1 = plot_data %>% 
+  filter(rurality != 'diff') %>%
   ggplot(aes(x = division, y = est, color = rurality)) +
   geom_point(position = position_dodge(width = 0.5)) +
   geom_errorbar(
@@ -78,8 +78,8 @@ cap = paste("*Difference (urban less rural) in proportion of",
 
 # Use ggplot to produce a figure `p2` matching what is shown using the
 #  data above. 
-plot_data_2 = plot_data[plot_data$rurality == 'diff', ]
-p2 = plot_data_2 %>% 
+p2 = plot_data %>% 
+  filter(rurality == 'diff') %>%
   ggplot(aes(y = division, x = est)) + 
   geom_point() +
   geom_errorbarh(aes(xmin = lwr, xmax = upr)) +
