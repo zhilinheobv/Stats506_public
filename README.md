@@ -24,3 +24,6 @@ Yan Chen: https://github.com/yanchannn/Stats506_public
 Tianshi Wang: https://github.com/SkyWang0919/Stats506_public
 
 Hao He: https://github.com/hhaohe513/Stats506_public
+
+1. In week 4 we practiced dplyr in R.
+2. In week 5 we practiced ggplot in R.
