@@ -24,7 +24,7 @@ week4_part1.Rmd: The script written in part 1 of week 4 activity.
 
 week4_part1.html: The resulting html file.
 
-In week 5, we made 2 plots using ggplot.
+In week 5, we made 2 plots about RECS data using ggplot.
 
 <img src="../activities/week5/w4_p2_q1_plot.png" height="50%" width="50%">
 
