@@ -82,3 +82,11 @@ table_p = table %>%
          missing = sprintf("%5d (%.1f%%)",missing, p_missing*100)) %>%
   select(type, complete, missing)
 print(table_p)
+
+## add p-values
+
+library(MASS)
+
+chisq.test(table1[,c(2,3)])
+chisq.test(table2[,c(2,3)])
+chisq.test(table3[,c(2,3)])
