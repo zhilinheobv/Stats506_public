@@ -75,4 +75,10 @@ table = table %>% select(type = under_20, complete, missing)
 
 ## Add a percentage
 
-table_p = table %>% mutate(percentage)
+table_p = table %>% 
+  mutate(p_complete = complete/(complete+missing), 
+         p_missing = missing/(complete+missing),
+         complete = sprintf("%5d (%.1f%%)",complete, p_complete*100),
+         missing = sprintf("%5d (%.1f%%)",missing, p_missing*100)) %>%
+  select(type, complete, missing)
+print(table_p)
