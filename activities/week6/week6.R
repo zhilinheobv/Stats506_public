@@ -68,6 +68,11 @@ table3 = df %>% group_by(college, ohx) %>% summarise(n=n()) %>%
 
 table = rbind(table1, table2, table3)
 
-table[,1] = c("Not under 20", "under")
+table[,1] = c("Not under 20", "Under 20", "Male", "Female", 
+              "College", "No college")
 
-## 
+table = table %>% select(type = under_20, complete, missing)
+
+## Add a percentage
+
+table_p = table %>% mutate(percentage)
