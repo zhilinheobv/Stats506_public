@@ -97,7 +97,8 @@ recs_mean0 = function(df, vars) {
 
   df %>% 
     summarize(
-      across(vars, function(x) sum(x*weight) / sum(weight)),
+      across(all_of(vars), 
+             function(x) sum(x*weight) / sum(weight)),
       .groups = "drop"
     )
 }
