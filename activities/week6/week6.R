@@ -90,3 +90,7 @@ library(MASS)
 chisq.test(table1[,c(2,3)])
 chisq.test(table2[,c(2,3)])
 chisq.test(table3[,c(2,3)])
+m=df[df$sex=="Male",]
+f=df[df$sex=="Female",]
+aggregate(m[, "_score"], list(m$v_score_text), mean)
+aggregate(f[, "is_violent_recid"], list(f$v_score_text), mean)

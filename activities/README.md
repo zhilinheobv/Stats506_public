@@ -29,3 +29,5 @@ In week 5, we made 2 plots about RECS data using ggplot.
 <img src="../activities/week5/w4_p2_q1_plot.png" height="50%" width="50%">
 
 <img src="../activities/week5/w4_p2_q2_plot.png" height="50%" width="50%">
+
+in week 6, we cleaned the datasets and created tables.

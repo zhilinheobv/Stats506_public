@@ -27,3 +27,4 @@ Hao He: https://github.com/hhaohe513/Stats506_public
 
 1. In week 4 we practiced dplyr in R.
 2. In week 5 we practiced ggplot in R, and made 2 plots.
+3. in week 6 we practiced data cleaning and exploring in R.
