@@ -121,11 +121,12 @@ add_groups = function(df, group = NULL) {
   if(is.null(group)) {
     return(df)
   }
-#  for (name in group) {
-#    df = df %>% group_by(.data[[name]], .add = TRUE)
-#  }
-#  df
-  group_by(df, across({{group}}))
+  stopifnot(all(group %in% names(df)))
+  for (name in group) {
+    df = df %>% group_by(.data[[name]], .add = TRUE)
+  }
+  df
+#  group_by(df, across({{group}}))
 }
 
 ## task 4: write a functional version with groups
