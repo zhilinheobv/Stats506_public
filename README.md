@@ -15,7 +15,7 @@ Zhilin He: https://github.com/zhilinheobv/Stats506_public
 2. In week 2 we worked though some questions about R vectors.
 3. In week 3 we created and modified a git repository.
 
-### Weeks 4-6
+### Weeks 4-7
 
 Zhilin He: https://github.com/zhilinheobv/Stats506_public
 
@@ -28,3 +28,13 @@ Hao He: https://github.com/hhaohe513/Stats506_public
 1. In week 4 we practiced dplyr in R.
 2. In week 5 we practiced ggplot in R, and made 2 plots.
 3. in week 6 we practiced data cleaning and exploring in R.
+
+### Week 8: Group Project
+
+Zhilin He: https://github.com/zhilinheobv/Stats506_public
+
+Jialun Li: https://github.com/CataphractLi/Stats506_public
+
+Chuwen Li: https://github.com/lixx4228/Stats506_public
+
+Group Project link: https://github.com/zhilinheobv/group3_project
