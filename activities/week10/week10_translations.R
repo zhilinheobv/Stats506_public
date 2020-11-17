@@ -69,7 +69,8 @@ batting_dt[, .(playerID, yearID, league = lgID, avg = H / AB)]
 
 # dplyr 
 
-batting_tbl %>% mutate(avg = H / AB) %>%
+batting_tbl %>% 
+  mutate(avg = H / AB) %>%
   select(playerID, yearID, league = lgID, avg)
 
 ## Question 3 #################################################################
@@ -109,7 +110,8 @@ lahman %>% tbl(sql(query))
 
 # dplyr
 
-batting_tbl %>% group_by(playerID) %>%
+batting_tbl %>% 
+  group_by(playerID) %>%
   summarise(avg = sum(H) / sum(AB))
 
 ## Question 5 #################################################################
@@ -153,7 +155,7 @@ lahman %>% tbl(sql(query)) %>% collect()
 
 # data.table (use %>% with .[], or chaining dt[][])
 
-batting_dt[ yearID > 1999, .(HR = sum(HR)), .(playerID)] %>%
+batting_dt[yearID > 1999, .(HR = sum(HR)), by = .(playerID)] %>%
   .[order(-HR)] %>%
   .[HR > 400]
 
