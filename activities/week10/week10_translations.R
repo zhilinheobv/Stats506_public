@@ -102,7 +102,7 @@ batting_dt[ , .(avg = sum(H) / sum(AB)), .(playerID)]
 query = 
 '
 SELECT playerID,
-       (SUM(Cast (H as Float)) /  SUM(Cast (AB as Float)) ) as avg
+       (SUM(Cast (H as Float)) / SUM(Cast (AB as Float)) ) as avg
 FROM BATTING
 GROUP BY playerID
 '
